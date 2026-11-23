@@ -1,0 +1,98 @@
+{
+  "vehicle_capacity_kg": 12,
+  "parcels": [
+    {
+      "parcel_id": "P101",
+      "destination": "A",
+      "weight": 4,
+      "priority": 5,
+      "deadline_hour": 10,
+      "value": 80
+    },
+    {
+      "parcel_id": "P102",
+      "destination": "B",
+      "weight": 6,
+      "priority": 4,
+      "deadline_hour": 12,
+      "value": 90
+    },
+    {
+      "parcel_id": "P103",
+      "destination": "C",
+      "weight": 3,
+      "priority": 5,
+      "deadline_hour": 9,
+      "value": 70
+    },
+    {
+      "parcel_id": "P104",
+      "destination": "D",
+      "weight": 5,
+      "priority": 3,
+      "deadline_hour": 15,
+      "value": 60
+    },
+    {
+      "parcel_id": "P105",
+      "destination": "E",
+      "weight": 2,
+      "priority": 2,
+      "deadline_hour": 11,
+      "value": 35
+    },
+    {
+      "parcel_id": "P106",
+      "destination": "B",
+      "weight": 4,
+      "priority": 4,
+      "deadline_hour": 10,
+      "value": 65
+    }
+  ],
+  "graph_distance_units": {
+    "Depot": {
+      "A": 4,
+      "B": 7,
+      "C": 9,
+      "D": 10,
+      "E": 8
+    },
+    "A": {
+      "Depot": 4,
+      "B": 3,
+      "C": 5,
+      "D": 8,
+      "E": 7
+    },
+    "B": {
+      "Depot": 7,
+      "A": 3,
+      "C": 4,
+      "D": 6,
+      "E": 5
+    },
+    "C": {
+      "Depot": 9,
+      "A": 5,
+      "B": 4,
+      "D": 3,
+      "E": 6
+    },
+    "D": {
+      "Depot": 10,
+      "A": 8,
+      "B": 6,
+      "C": 3,
+      "E": 4
+    },
+    "E": {
+      "Depot": 8,
+      "A": 7,
+      "B": 5,
+      "C": 6,
+      "D": 4
+    }
+  },
+  "notes": "Undirected weighted graph; edge weights are non-negative distance units."
+}
